@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vislice</title>
+    <link rel="stylesheet" href="styless.css"/>
+</head>
+<body>
+<h1>HANGMAN</h1>
+    <div id="bar" class="bar">
+        
+        <div id="money-container">
+            <p id="money-text">0</p>
+            <img src="coin.png" alt="money" id="money-img"/>
+        </div>
+    </div>
+    <div id="game-container"  class="game-container">
+        <div id="hangman-container"  class="hangman-container">
+                <div id="head" class="head"></div>
+                <div id="body" class="body"></div>
+                <div id="arms" class="arms">
+                    <div id="left-arm" class="arm left"></div>
+                    <div id="right-arm" class="arm right"></div>
+                </div>
+                <div id="legs" class="legs">
+                    <div id="left-leg" class=" leg left"></div>
+                    <div id="right-leg" class="leg right"></div>
+                </div>
+                <div id="bottom-stick" class="bottom-stick"></div>
+                <div id="middle-stick" class="middle-stick"></div>
+                <div id="top-stick" class="top-stick"></div>
+                <div id="rope" class="rope"></div>
+        </div>
+    
+    <div id="word-container" class="word-container">
+        <div id="letter-container-1" class="letter-container"><p></p></div>
+        <div id="letter-container-2" class="letter-container"><p></p></div>
+        <div id="letter-container-3" class="letter-container"><p></p></div>
+        <div id="letter-container-4" class="letter-container"><p></p></div>
+        <div id="letter-container-5" class="letter-container"><p></p></div>
+        <div id="letter-container-6" class="letter-container"><p></p></div>
+        <div id="letter-container-7" class="letter-container"><p></p></div>
+        <div id="letter-container-8" class="letter-container"><p></p></div>
+        <div id="letter-container-9" class="letter-container"><p></p></div>
+        <div id="letter-container-10" class="letter-container"><p></p></div>
+    </div>
+    <div id="lose-screen" class="lose">
+        <h3>IZGUBIL SI</h3>
+        <button id ="restart-button" class="restart">POSKUSI ZNOVA</button>
+    </div>
+    <div id="winn-screen" class="winn">
+        <h3>ZMAGAL SI</h3>
+        <button id ="restart-button" class="restart">POSKUSI ZNOVA</button>
+    </div>
+    <div id="keyboard-container" class="keyboard-container">
+        <button id="letter-a" class="letter-button"><p>A</p></button>
+        <button id="letter-b" class="letter-button"><p>B</p></button>
+        <button id="letter-c" class="letter-button"><p>C</p></button>
+        <button id="letter-č" class="letter-button"><p>Č</p></button>
+        <button id="letter-d" class="letter-button"><p >D</p></button>
+        <button id="letter-e" class="letter-button"><p>E</p></button>
+        <button id="letter-f" class="letter-button"><p>F</p></button>
+        <button id="letter-g" class="letter-button"><p>G</p></button>
+        <button id="letter-h" class="letter-button"><p>H</p></button>
+        <button id="letter-i" class="letter-button"><p>I</p></button>
+        <button id="letter-j" class="letter-button"><p>J</p></button>
+        <button id="letter-k" class="letter-button"><p>K</p></button>
+        <button id="letter-l" class="letter-button"><p>L</p></button>
+        <button id="letter-m" class="letter-button"><p>M</p></button>
+        <button id="letter-n" class="letter-button"><p>N</p></button>
+        <button id="letter-o" class="letter-button"><p>O</p></button>
+        <button id="letter-p" class="letter-button"><p>P</p></button>
+        <button id="letter-r" class="letter-button"><p>R</p></button>
+        <button id="letter-s" class="letter-button"><p>S</p></button>
+        <button id="letter-š" class="letter-button"><p>Š</p></button>
+        <button id="letter-t" class="letter-button"><p>T</p></button>
+        <button id="letter-u" class="letter-button"><p>U</p></button>
+        <button id="letter-v" class="letter-button"><p>V</p></button>
+        <button id="letter-z" class="letter-button"><p>Z</p></button>
+        <button id="letter-ž" class="letter-button"><p>Ž</p></button>
+    </div>
+    </div>
+    <button id="easter-egg1"></button>
+    <button id="easter-egg2"></button>
+    <img src="twingo.png" id="easter-image"/>
+    
+    <script src="easter-egg.js"></script>
+    <script type="module" src="random-word.js"></script>
+    <script type="module" src="buttons_script.js"></script>
+    <script type="module" src="logic_script.js"></script>
+    
+</body>
+</html>
